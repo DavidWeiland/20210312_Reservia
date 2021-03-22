@@ -1,9 +1,9 @@
 /*Général*/
 @font-face {
     font-family: 'raleway';
-    src: url('fonts/raleway/Raleway-VariableFont_wght.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    src: url('fonts/raleway/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: initial;
+    font-style: italic;
 }
 
 body {
@@ -15,18 +15,17 @@ body {
 }
 
 h1 {
-    font-size: 1em;
+    font-size: 16px;
+    font-weight: bold;
+}
+p{
+    font-size: 12px;
 }
 
 /*Icones*/
-.iconBasic {
-    background-color: #F2F2F2;
-}
 
-.iconButton {
-    background-color: #0065FC;
-    color: #FFF;
-}
+
+
 
 .iconFiltreContainer{
     width: 50px;
@@ -43,23 +42,21 @@ h1 {
 /* mise en forme*/
 /*Entête*/
 header {
-    border : solid 1px grey;
-    margin-top: 0 px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-    border : solid 1px red;
     width: 100px;
     height: 40px;
-    margin-top: 50px;
+    border:solid 1px red;
+    
 }
 
 nav ul {
-    border : solid 1px red;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -68,7 +65,6 @@ nav ul {
 }
 
 nav li {
-    border : solid 1px yellow;
     display:flex;
     justify-content: flex-end;
     padding-left : 25px;
@@ -78,10 +74,9 @@ nav li {
 }
 
 nav a {
-    border:solid 1px green;
     text-decoration: none;
     color:black;
-    font-size: 0.8em;
+    font-size: 12px;
 }
 
 .exemple {
@@ -93,4 +88,59 @@ nav a {
 }
 .lienExemple{
     color:#0065FC;
+}
+
+/*Zone Recherche*/
+
+.formulaireRecherche{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+}
+
+.labelFormulaire{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+    height: 50px;
+    width: 50px;
+}
+
+/*
+.iconBasic {
+    background-color: #F2F2F2;
+}*/
+
+.zoneTextFormulaire{
+    border: solid 1px #F2F2F2;
+    height: 47px;
+    width: 155px;
+    margin-left: initial;
+    margin-right: initial;
+}
+::placeholder{
+    color:black;
+    font-size: 12px;
+    font-weight: bold;
+
+    padding-left: 20px;
+}
+.zoneTextFormulaire:focus{
+    background-color: #DEEBFF;
+}
+
+.iconButton {
+    border: 0;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #0065FC;
+    color: #FFF;
+    padding: 19px;
+    font-size: 12px;
+    font-weight: bold;
+    height: 50px;
+    margin-left: initial;
 }
