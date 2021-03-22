@@ -138,3 +138,11 @@ nav a {
     height: 50px;
     margin-left: initial;
 }
+/* à activer qd mise en page Iphone
+.secretScreenLarge{
+    display: none;
+}*/
+
+#secretScreenSmall{
+    display: none;
+}
