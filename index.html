@@ -19,14 +19,14 @@
  	    </header>
         <main>
             <Section class="recherche"><!--uniquement pour clareté du code, pas d'intérêt sur la structure-->
-                <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
                 <form method="post" action="traintement.php">
-                    <p>
-                        <label for="mapSearch">
+                    <p class="formulaireRecherche">
+                        <label for="mapSearch" class="labelFormulaire">
                             <i  class="fas fa-map-marker-alt iconBasic"></i>
                         </label>
-                        <input type="text" name="mapSearch" id="mapSearch" placeholder="ex: Marseille, France">
+                        <input type="text" name="mapSearch" id="mapSearch" placeholder="Marseille, France" class="zoneTextFormulaire">
                         <input type="submit" value="Rechercher" class="iconButton"/><!--hidden sur screen small, css opacity ?-->
                         <button type="submit" class="fas fa-search iconButton"></button><!--hidden sur screen large, css opacity ?-->
                     </p>
