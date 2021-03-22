@@ -16,3 +16,26 @@ body {
 h1 {
     font-size: 1em;
 }
+
+/*Icones*/
+.iconBasic {
+    background-color: #F2F2F2;
+}
+
+.iconButton {
+    background-color: #0065FC;
+    color: #FFF;
+}
+
+.iconFiltreContainer{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #DEEBFF;
+}
+.iconFiltre{
+    color:#0065FC;
+}
