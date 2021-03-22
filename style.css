@@ -17,25 +17,15 @@ h1 {
     font-size: 16px;
     font-weight: bold;
 }
+h2 {
+    font-size: 13px;
+    font-weight: bold;
+}
+
 p{
     font-size: 12px;
 }
 
-/*Icones*/
-.iconFiltreContainer{
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    background-color: #DEEBFF;
-}
-.iconFiltre{
-    color:#0065FC;
-}
-
-/* mise en forme*/
 /*Entête*/
 header {
     width: 100%;
@@ -80,12 +70,12 @@ nav a {
 .toOtherPage {
     font-weight: bold;   
 }
+
 .lienExemple{
     color:#0065FC;
 }
 
 /*Zone Recherche*/
-
 .formulaireRecherche{
     display: flex;
     flex-direction: row;
@@ -104,11 +94,6 @@ nav a {
     width: 50px;
 }
 
-/*
-.iconBasic {
-    background-color: #F2F2F2;
-}*/
-
 .zoneTextFormulaire{
     border: solid 1px #F2F2F2;
     height: 47px;
@@ -116,6 +101,7 @@ nav a {
     margin-left: initial;
     margin-right: initial;
 }
+
 ::placeholder{
     color:black;
     font-size: 12px;
@@ -123,6 +109,7 @@ nav a {
 
     padding-left: 20px;
 }
+
 .zoneTextFormulaire:focus{
     background-color: #DEEBFF;
 }
@@ -138,6 +125,7 @@ nav a {
     height: 50px;
     margin-left: initial;
 }
+
 /* à activer qd mise en page Iphone
 .secretScreenLarge{
     display: none;
@@ -145,4 +133,70 @@ nav a {
 
 #secretScreenSmall{
     display: none;
+}
+
+/*Zone Filtres*/
+.filtres {
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+    flex-wrap: wrap;
+}
+
+.iconFiltreContainer{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #DEEBFF;
+}
+
+.iconFiltre{
+    color:#0065FC;
+}
+
+.filter{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    width:auto;
+    height:50px;
+    border-top: solid #D9D9D9 2px;
+    border-right: solid #D9D9D9 2px;
+    border-bottom: solid #D9D9D9 2px;
+    border-radius : 33px 33px;
+    margin-left: 50px;
+    padding-right:10px;
+}
+
+.filter p{
+    display:flex;
+    align-items: center;
+    margin-left: 12px;
+    padding-right: 12px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.iconInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border: solid 1px #D9D9D9;
+    border-radius: 100%;
+    margin: 10px;
+    font-size: 12px;
 }
