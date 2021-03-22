@@ -7,6 +7,7 @@
 }
 
 body {
+    border : solid 1px blueviolet;
     font-family: raleway, arial, sans-serif;
     max-width: 1340px;
     margin-left: 50px;
@@ -37,5 +38,59 @@ h1 {
     background-color: #DEEBFF;
 }
 .iconFiltre{
+    color:#0065FC;
+}
+/* mise en forme*/
+/*Entête*/
+header {
+    border : solid 1px grey;
+    margin-top: 0 px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    border : solid 1px red;
+    width: 100px;
+    height: 40px;
+    margin-top: 50px;
+}
+
+nav ul {
+    border : solid 1px red;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+nav li {
+    border : solid 1px yellow;
+    display:flex;
+    justify-content: flex-end;
+    padding-left : 25px;
+    padding-right: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+nav a {
+    border:solid 1px green;
+    text-decoration: none;
+    color:black;
+    font-size: 0.8em;
+}
+
+.exemple {
+    border-top: 2px solid #0065FC;
+}
+
+.toOtherPage {
+    font-weight: bold;   
+}
+.lienExemple{
     color:#0065FC;
 }
