@@ -219,9 +219,10 @@ nav a {
     flex-wrap: wrap;
 }
 .hebergements{
+    width: 881px;
     display: flex;
-    justify-content: flex-start;
-    flex:2;
+    justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 17px;
@@ -237,26 +238,28 @@ nav a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    align-content: space-between;
     
 }
 .pied{
     border:1px blueviolet solid;
+    padding-left: 15px;
 }
 .cardHebergements{
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    width: 245px;
-    height: 200px;
-    border:5px white solid;
+    width: 246px;
+    height: 199px;
+    padding:5px;
+    /*border:5px red solid;*/
     border-radius: 12px;
     background-color: white;
     box-shadow: 5px 5px 5px 5px #E7E7E7;
-    margin-bottom: 15px;
-    margin-right: 15px;
+    margin: 15px;
 }
 .imageCardHebergements{
     width: 100%;
