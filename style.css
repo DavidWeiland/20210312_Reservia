@@ -227,21 +227,31 @@ nav a {
     background-color: #F2F2F2;
     border-radius: 17px;
     padding:15px;
+    margin-right: 20px;
 }
 .entete{
-    padding-left: 17px;
-    padding-top: 5px;
+    border:1px red solid;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-left:40px;
 }
 .corps{
+    border:1px blue solid;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     align-content: space-between;
+    padding:20px;
+    padding-top: 0px;
 }
 .pied{
-    padding-left: 17px;
+    padding-left: 40px;
+    padding-bottom: 20px;
 }
 .cardHebergements{
     display: flex;
@@ -263,17 +273,59 @@ nav a {
     border-radius: 12px 12px 0px 0px;
 }
 .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     margin-left: 12px;
     margin-right: 12px;
     margin-top: 0px;
 }
+.note {
+    display: flex;
+    flex-direction: row;
+}
 .card i{
     font-size: 12px;
 }
+
 aside {
     flex:1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 17px;
-    padding: 40px;
-    margin-left:40px;
+    margin-left: 20px;
+    padding:15px
+}
+.entetePopulaire{
+    border:1px red solid;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.cardPopulaire{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: auto;
+    height: 144px;
+    padding:5px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px #E7E7E7;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.imageCardPopulaire{
+    width:127px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px 0px 0px 12px;
 }
