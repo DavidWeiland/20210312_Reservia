@@ -101,14 +101,16 @@ nav a {
     width: 155px;
     margin-left: initial;
     margin-right: initial;
+    color:black;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 20px;
 }
 
 ::placeholder{
     color:black;
     font-size: 12px;
     font-weight: bold;
-
-    padding-left: 20px;
 }
 
 .zoneTextFormulaire:focus{
