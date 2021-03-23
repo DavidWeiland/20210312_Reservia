@@ -127,6 +127,10 @@ nav a {
     margin-left: initial;
 }
 
+.iconButton:active{
+    border-top:2px solid #00255e;
+    border-left:2px solid #00255e;
+}
 /* à activer qd mise en page Iphone
 .secretScreenLarge{
     display: none;
