@@ -1,9 +1,9 @@
 /*Général*/
 @font-face {
     font-family: 'raleway';
-    src: url('fonts/raleway/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
-    font-weight: initial;
-    font-style: italic;
+    src: url('fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
@@ -15,11 +15,11 @@ body {
 
 h1 {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 900;
 }
 h2 {
     font-size: 13px;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 p{
@@ -219,33 +219,29 @@ nav a {
     flex-wrap: wrap;
 }
 .hebergements{
-    width: 881px;
+    flex:3;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 17px;
-    
-    border:1px red solid;
+    padding:15px;
 }
 .entete{
-    border:1px green solid;
-    padding-left: 15px;
+    padding-left: 17px;
+    padding-top: 5px;
 }
 .corps{
-    border:1px blue solid;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     align-content: space-between;
-    
 }
 .pied{
-    border:1px blueviolet solid;
-    padding-left: 15px;
+    padding-left: 17px;
 }
 .cardHebergements{
     display: flex;
@@ -255,7 +251,6 @@ nav a {
     width: 246px;
     height: 199px;
     padding:5px;
-    /*border:5px red solid;*/
     border-radius: 12px;
     background-color: white;
     box-shadow: 5px 5px 5px 5px #E7E7E7;
