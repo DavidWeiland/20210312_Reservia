@@ -370,3 +370,76 @@ aside {
     object-fit: cover;
     border-radius: 12px 0px 0px 12px;
 }
+.resultatActivites{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.resultatActivites a{
+    text-decoration: none;
+    color:black;
+}
+
+#activites{
+ margin-top: 40px;
+}
+.corpsActivites{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap; 
+    justify-content: space-between;
+    align-content: space-between;
+    margin-left:-1em;
+    margin-right: -1em;
+}
+.cardActivites{
+    display: flex;
+    flex-direction : column;
+    justify-content : space-between;
+    align-items : space-between;
+    flex : 1;
+    height: auto;
+    margin : 1em;
+}
+.cardMax{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 450px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px #E7E7E7;
+    margin:0;
+}
+.cardReduce{
+    display: flex;
+    flex:1;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: column;
+    width:100%;
+    height: 205px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px #E7E7E7;
+    margin: 0;
+}
+.imageCardActivites{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+
+figcaption{
+    background-color: white;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin: 1em;
+  
+}
+.cardMax .imageCardActivites{
+    height: 90%;
+}
