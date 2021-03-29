@@ -178,11 +178,6 @@ nav a:hover{
     border-top:2px solid #00255e;
     border-left:2px solid #00255e;
 }
-/*à activer qd mise en page Iphone
-
-.secretScreenLarge{border: 1px dashed red;
-    display: none;
-}*/
 
 #secretScreenSmall{
     display: none;
@@ -590,7 +585,7 @@ footer ul li{
     }
     
     /*Entête*/
-    header {border:1px red dashed;
+    header {
         height: 150px;
         padding-left: 15px;
         padding-right: 0px;
@@ -611,13 +606,13 @@ footer ul li{
         justify-content: space-between;
     }
 
-    .navigation a{border:1px green dashed;
-        padding : 25px;
+    .navigation a{
+        padding : 30px;
         display: flex;
         justify-content: space-between;
     }
 
-    nav ul {border:1px orangered solid;
+    nav ul{
         width:100%;
         display: flex;
         flex-direction: row;
@@ -632,11 +627,12 @@ footer ul li{
         flex: 1 1 50%;
     }
     
-    nav li {border:1px blueviolet dashed;
+    nav li {
         width: auto;
         display:flex;
         justify-content: center;
         align-items: center;
+        border-bottom: 3px solid #F2F2F2;
     }
     
     nav a {
@@ -652,13 +648,15 @@ footer ul li{
         font-weight: bold;
         color: #0065FC;   
     }
-    
     nav a:hover{
-        nav ul{
+        border-top:0;
+    }
+
+    nav li:hover{
+        border-bottom : 3px solid #0065FC;
+    }
+    nav li> *:hover{
         color:#0065FC;
-        border-bottom:3px #0065FC solid;
-        }
-    
     }
     
     /*Zone Recherche*/
@@ -731,14 +729,12 @@ footer ul li{
         border-top:2px solid #00255e;
         border-left:2px solid #00255e;
     }
-    /*à activer qd mise en page Iphone
     
-    .secretScreenLarge{border: 1px dashed red;
+    .secretScreenLarge{
         display: none;
-    }*/
-    
+    }
     #secretScreenSmall{
-        display: none;
+        display:flex;
     }
     
     /*Zone Filtres*/
