@@ -9,14 +9,16 @@
     <body>
 	    <header>
             <img class="logo" alt="Reservia_logo" src="images/logo/Reservia@3x.png"/>
-            <nav>
-                <ul>
-                  <li class="exemple"><a class="lienExemple" href="#hebergements">Hébergements</a></li><!--lien vers ancre id-->
-                  <li><a href="#activites">Activités</a></li>
-                  <li class="toOtherPage"><a class="lienExemple" href="">S'inscrire</a></li><!--lien vers ancre html, ici vierge-->
-                </ul>
-            </nav> 
- 	    </header>
+            <div class="navigation">
+                <nav>
+                    <ul>
+                    <li class="exemple"><a class="lienExemple" href="#hebergements">Hébergements</a></li><!--lien vers ancre id-->
+                    <li><a href="#activites">Activités</a></li>
+                    </ul>
+                </nav> 
+                <a  class="toOtherPage" href="">S'inscrire</a><!--lien vers ancre html, ici vierge-->
+            </div>
+        </header>
         <main>
             <section class="recherche"><!--uniquement pour clareté du code, pas d'intérêt sur la structure-->
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -33,29 +35,31 @@
                 </form>
                 <div class="filtres">
                     <h3>Filtres</h3>
-                    <div class="filter">
-                        <div class="iconFiltreContainer"><!--cliquable sur l'ensemble du bouton ? si oui, prévoir css actif et non actif -->
-                        <i class="fas fa-money-bill-wave iconFiltre"></i>
+                    <div class="filtreElements">
+                        <div class="filter">
+                            <div class="iconFiltreContainer"><!--cliquable sur l'ensemble du bouton ? si oui, prévoir css actif et non actif -->
+                            <i class="fas fa-money-bill-wave iconFiltre"></i>
+                            </div>
+                            <p>Economique</p>
                         </div>
-                        <p>Economique</p>
-                    </div>
-                    <div class="filter">
-                        <div class="iconFiltreContainer">
-                        <i class="fas fa-child iconFiltre"></i>
+                        <div class="filter">
+                            <div class="iconFiltreContainer">
+                            <i class="fas fa-child iconFiltre"></i>
+                            </div>
+                            <p>Familial</p>
                         </div>
-                        <p>Familial</p>
-                    </div>
-                    <div class="filter">
-                        <div class="iconFiltreContainer">
-                        <i class="fas fa-heart iconFiltre"></i>
+                        <div class="filter">
+                            <div class="iconFiltreContainer">
+                            <i class="fas fa-heart iconFiltre"></i>
+                            </div>
+                            <p>Romantique</p>
                         </div>
-                        <p>Romantique</p>
-                    </div>
-                    <div class="filter">
-                        <div class="iconFiltreContainer">
-                        <i class="fas fa-dog iconFiltre"></i>
+                        <div class="filter">
+                            <div class="iconFiltreContainer">
+                            <i class="fas fa-dog iconFiltre"></i>
+                            </div>
+                            <p>Animaux autorisés</p>
                         </div>
-                        <p>Animaux autorisés</p>
                     </div>
                 </div>
                 <div class="info">
@@ -281,7 +285,7 @@
         </main>
         <footer>
 
-    	<div class="footerElements">
+    	<div>
             <h3>A propos</h3>
             <ul>
                 <li><a href="#">Fonctionnement du site</a></li>
@@ -289,14 +293,14 @@
                 <li><a href="#">Données et confidentialité</a></li>
             </ul>
         </div>
-        <div class="footerElements">
+        <div>
             <h3>Nos hébergements</h3>
             <ul>
                 <li><a href="#">Charte qualité</a></li>
                 <li><a href="#">Soumettre votre hôtel</a></li>
             </ul>
         </div>
-        <div class="footerElements">
+        <div>
             <h3>Assistance</h3>
             <ul>
                 <li><a href="#">Centre d'aide</a></li>
