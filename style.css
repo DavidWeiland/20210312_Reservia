@@ -127,9 +127,9 @@ nav a:hover{
     justify-content: flex-start;
     align-items: center;
     height: 3.125em;
-    min-width: 100%;
     margin-bottom: 1.875em;
     font-size: 0.81em;
+    margin-right: auto;
 }
 
 .labelFormulaire{
@@ -150,7 +150,7 @@ nav a:hover{
     margin-left: initial;
     margin-right: initial;
     color:black;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: bold;
     padding-left: 1.25em;
 }
@@ -228,7 +228,7 @@ nav a:hover{
     align-items: center;
     border-radius: 100%;
     background-color: #DEEBFF;
-    font-size: 1.19em;
+    font-size: 1.2em;
     margin-right: 0.625em;
 }
 
@@ -342,14 +342,14 @@ nav a:hover{
     padding:2%;
     border-radius: 0.75em;
     background-color: white;
-    box-shadow: 5px 5px 5px 5px #E7E7E7;
+    box-shadow: 10px 10px 40px 2px #D9D9D9;
     margin: 2%;
 }
 
 .imageCardHebergements{
     box-sizing: border-box;
     width: 100%;
-    height: 60%;
+    height: 65%;
     object-fit: cover;
     border-radius: 0.75em 0.75em 0em 0em;
 }
@@ -363,7 +363,7 @@ nav a:hover{
     align-content: flex-start;
     width: 100%;
     height:100%;
-    padding: 0.75em;
+    padding: 1%;
     margin-top: 0;
 }
 
@@ -417,6 +417,7 @@ aside {
 
 .corpsPopulaire > *{
     flex:1 1 27%;
+    width: 100%;
 }
 
 .cardPopulaire{
@@ -430,12 +431,12 @@ aside {
     padding:5px;
     border-radius: 0.75em;
     background-color: white;
-    box-shadow: 5px 5px 5px 5px #E7E7E7;
+    box-shadow: 5px 5px 40px 5px #D9D9D9;
     margin: 2%;
 }
 
 .imageCardPopulaire{
-    width:40%;
+    min-width:40%;
     height: 100%;
     object-fit: cover;
     border-radius: 0.75em 0em 0em 0.75em;
@@ -494,7 +495,7 @@ aside {
     height: 450px;
     border-radius: 0.75em;
     background-color: white;
-    box-shadow: 5px 5px 5px 5px #E7E7E7;
+    box-shadow: 5px 5px 40px 5px #D9D9D9;
     margin:0;
 }
 
@@ -508,7 +509,7 @@ aside {
     height: 220px;
     border-radius: 0.75em;
     background-color: white;
-    box-shadow: 5px 5px 5px 5px #E7E7E7;
+    box-shadow: 5px 5px 40px 5px #D9D9D9;
     margin:0;
 }
 
@@ -537,19 +538,19 @@ footer{
     width: 100%;
     max-width: 1440px;
     margin-top: 1%;
+    margin-bottom: 1%;
     margin-right: auto;
     margin-left: auto;
+    padding-right:auto;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
-footer > *{
-    flex:1 1 27%;
-}
+
+
 footer div{
-        min-width: 300px;
+        min-width: 350px;
         margin-left: auto;
         padding-left:0.75em;
-        padding-right: auto;
         margin-top: 2em;
         display: flex;
         flex-direction: column;
@@ -568,12 +569,12 @@ footer ul li{
 }
 
 /*Format IP8*/
-@media all and (max-width: 750px)
+@media screen and (max-device-width: 750px)
 {
     body {
         font-size : 32px;
-        max-width: 100%;
-        margin: 0;
+        width: 102%;
+        padding-right:-1em;
     }
 
     /*Entête*/
@@ -643,28 +644,19 @@ footer ul li{
         margin:0;
         padding-left: 1.25em;
         padding-right: 0;
+        align-items: stretch;
     }
     
     .formulaireRecherche{
+        align-items:center;
         justify-content: center;
-        width: 100%;
-        margin-left: 2%;
-        margin-right: 2%;
-        font-size: 1em;
-    }
-    
-    .zoneTextFormulaire{
-        width: 55%;
-        font-size: 1em;
-    }
-    
-    ::placeholder{
-        font-size: 1em;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .iconButton {
         border-radius: 13px 13px 13px 13px;
-        font-size: 1em;
     }
     
     .secretScreenLarge{
@@ -684,18 +676,17 @@ footer ul li{
     }
 
     .filtreElements{
-        justify-content: space-between;
         padding-right: 10px;
     }
     
     .filter{
         margin : 1%;
     }
-    
+
     .filter p{
-        font-size: 1em;
+        font-size:1.2em;
     }
-    
+
     .info{
         width: 95%;
         align-items: flex-start;
@@ -732,10 +723,13 @@ footer ul li{
         flex-direction: column;
         background-color: #F2F2F2;
         border-radius: 0;
-        margin: 0;
-        padding:2%;
+        margin: auto;
+        padding:auto;
         padding-top: 30px;
         height: 100%;
+    }
+    .corpsPopulaire > *{
+        flex:100%;
     }
     
     .hebergements{
@@ -747,6 +741,10 @@ footer ul li{
     }
     .corps > *{
         flex:100%;
+    }
+    
+    .imageCardHebergements{
+        height: 70%;
     }
     
     /*Section Activités*/
@@ -778,6 +776,11 @@ footer ul li{
         height: 80%;
     }
     
+    footer > *{
+        flex: 1 1 50%;
+        width:100%;
+    }
+
     footer ul{
         text-indent:-1.6em ;
     }
