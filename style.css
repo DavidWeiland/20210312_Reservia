@@ -561,7 +561,8 @@ footer ul li{
 @media all and (max-width: 375px)
 {
     body {
-        max-width: 100%;
+        max-width: 375px;
+        margin: 0;
     }
 
     h1 {
@@ -586,11 +587,12 @@ footer ul li{
     
     /*Entête*/
     header {
+        margin:0;
         height: 150px;
-        padding-left: 15px;
         padding-right: 0px;
         display: flex;
         flex-wrap: wrap;
+        padding-left: 20px;
     }
     
     .logo {
@@ -661,73 +663,31 @@ footer ul li{
     
     /*Zone Recherche*/
     .recherche{
-        width: 100%;
-        box-sizing: border-box;
-        margin-left: 50px;
-        padding-right: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        margin:0;
+        padding-left: 20px;
+        padding-right: 0px;
     }
     
     .formulaireRecherche{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        height: 50px;
-        margin-bottom: 30px;
-        font-size: 0.81em;
-    }
-    
-    .labelFormulaire{
-        display: flex;
-        align-items: center;
         justify-content: center;
-        background-color: #F2F2F2;
-        border-radius: 13px 0px 0px 13px;
-        height: 51px;
-        width: 50px;
+        width: 100%;
+        margin-left: 2%;
+        margin-right: 2%;
+        font-size: 1em;
     }
     
     .zoneTextFormulaire{
-        border: solid 1px #F2F2F2;
-        height: 48px;
-        width: 155px;
-        margin-left: initial;
-        margin-right: initial;
-        color:black;
-        font-size: 0.81em;
-        font-weight: bold;
-        padding-left: 20px;
+        width: 55%;
+        font-size: 1em;
     }
     
     ::placeholder{
-        color:black;
-        font-size: 0.81em;
-        font-weight: bold;
-    }
-    
-    .zoneTextFormulaire:focus{
-        background-color: #DEEBFF;
+        font-size: 1em;
     }
     
     .iconButton {
-        border: 0;
-        border-radius: 0px 13px 13px 0px;
-        background-color: #0065FC;
-        color: #FFF;
-        padding: 19px;
-        font-size: 0.81em;
-        font-weight: bold;
-        height: 51px;
-        margin-left: initial;
-    }
-    
-    .iconButton:active{
-        border-top:2px solid #00255e;
-        border-left:2px solid #00255e;
+        border-radius: 13px 13px 13px 13px;
+        font-size: 1em;
     }
     
     .secretScreenLarge{
@@ -739,376 +699,127 @@ footer ul li{
     
     /*Zone Filtres*/
     .filtres {
-        display:flex;
-        flex-direction:row;
-        justify-content: flex-start;
-        align-items: center;
-        align-content: center;
-        padding-left: 10px;
-        margin-bottom: 30px;
+        flex-direction:column;
+        align-items: flex-start;
+        align-content: flex-start;
+        padding-left: 0px;
+        margin-top:30px ;
     }
+
     .filtreElements{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .iconFiltreContainer{
-        width: 50px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 100%;
-        background-color: #DEEBFF;
-        font-size: 1.19em;
-    }
-    
-    .iconFiltre{
-        color:#0065FC;
-    }
-    
-    .iconFiltreInactif{
-        color:#F2F2F2;
+        justify-content: space-between;
+        padding-right: 10px;
     }
     
     .filter{
-        display:flex;
-        flex-direction:row;
-        justify-content:space-around;
-        width:auto;
-        height:50px;
-        border-top: solid #D9D9D9 2px;
-        border-right: solid #D9D9D9 2px;
-        border-bottom: solid #D9D9D9 2px;
-        border-radius : 33px 33px;
-        margin-left: 50px;
-        padding-right:10px;
+        margin : 1%;
     }
     
     .filter p{
-        display:flex;
-        align-items: center;
-        margin-left: 12px;
-        padding-right: 12px;
-        font-weight: bold;
-        font-size: 0.8125em;
-    }
-    
-    .filter:hover .iconFiltre{
-        color: black;
-    }
-    .filter:hover .iconFiltreContainer{
-        background-color: #F2F2F2;
-    }
-    .filter:hover{
-        color:grey;
+        font-size: 1em;
     }
     
     .info{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-bottom: 30px;
-    
+        width: 96%;
+        align-items: flex-start;
     }
     
     .iconInfo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 25px;
-        height: 25px;
-        border: solid 1px #D9D9D9;
-        border-radius: 100%;
-        margin: 10px;
-        font-size: 0.75em;
+        width: 20px;
+        height: 20px;
+        margin:0;
     }
-    
+
+    .info p{
+        padding:0;
+        margin: 0;
+        margin-left: 1%;
+        width: 320px;
+    }
+
     /*Section resultat*/
     .resultat{
-        display: flex;
-        width: 100%;
-        box-sizing: border-box;
         margin:0;
-        margin-left: 50px;
-        padding-right: 50px;
-        flex-direction: row;
-        justify-content:space-between;
+        padding-left: 0;
+        padding-right: 0;
+        flex-direction: column-reverse;
+        justify-content:flex-start;
+    }
+
+    aside {
+        width:95%;
+        display: flex;
+        justify-content: center;
         align-items: flex-start;
+        flex-direction: column;
+        background-color: #F2F2F2;
+        border-radius: 0;
+        margin: 0;
+        padding:2%;
+        padding-top: 30px;
+        height: 100%;
     }
     
     .hebergements{
-        width:68%;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-direction: column;
-        background-color: #F2F2F2;
-        border-radius: 17px;
-        padding:15px;
-        padding-top: 30px;
-        margin: 10px;
+        width:95%;
+        background-color:#FFF;
+        border-radius: 0;
+        padding:2%;
+        margin: 0;
     }
-    .entete{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        padding-top: 20px;
-        padding: 10px;
     
-    }
-    .corps{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        align-content: space-between;
-        width:100%;
-    }
-    .corps > *{
-        flex:1 1 27%;
-    }
     .pied{
-        width: 100%;
-        padding-left: 10px;
-        padding: 24px;
-        font-size: 0.81em;
-        font-weight: bold;
+        font-size: 1em;
     }
-    .cardHebergements{
-        box-sizing: border-box;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: column;
-        min-width: 245px;
-        height: 199px;
-        padding:5px;
-        border-radius: 12px;
-        background-color: white;
-        box-shadow: 5px 5px 5px 5px #E7E7E7;
-        margin: 2%;
-    }
-    
-    .imageCardHebergements{
-        box-sizing: border-box;
-        width: 100%;
-        height: 60%;
-        object-fit: cover;
-        border-radius: 12px 12px 0px 0px;
-    }
-    
-    .card{
-        display: flex;
-        box-sizing: border-box;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        align-content: flex-start;
-        width: 100%;
-        height:100%;
-        padding: 12px;
-        margin-top: 0;
-    }
-    
+   
     .card p {
-        margin-top: 0;
-        font-size : 0.625em;
-    }
-    
-    .note {
-        margin-top: 1%;
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .card i{
-        font-size: 0.75em;
-    }
-    
-    aside {
-        width:29%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        background-color: #F2F2F2;
-        border-radius: 17px;
-        margin: 10px;
-        padding:15px;
-        padding-top: 30px;
-        height: 100%;
-    }
-    
-    .entetePopulaire{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 20px;
-        padding-bottom: 10px;
-    }
-    
-    .corpsPopulaire{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        align-content: space-between;
-        box-sizing: border-box;
-        width:100%;
-    }
-    
-    .corpsPopulaire > *{
-        flex:1 1 27%;
-    }
-    
-    .cardPopulaire{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-direction: row;
-        box-sizing: border-box;
-        width: 96%;
-        height: 144px;
-        padding:5px;
-        border-radius: 12px;
-        background-color: white;
-        box-shadow: 5px 5px 5px 5px #E7E7E7;
-        margin: 2%;
-    }
-    
-    .imageCardPopulaire{
-        width:40%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 12px 0px 0px 12px;
+        font-size : 0.75em;
     }
     
     /*Section Activités*/
     .resultatActivites{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 100%;
-        box-sizing: border-box;
         margin: 0;
-        margin-left:50px;
-        padding-right: 50px;
-        justify-content:space-between;
-        align-items: flex-start;
-    }
-    
-    #activites{
-        margin-top: 40px;
-        margin-left: 1em;
+        padding:1%;
     }
     
     .corpsActivites{
-        display: flex;
-        flex-direction: row;
-        flex-wrap:wrap; 
-        justify-content: space-between;
-        align-content: space-between;
-        width: 100%;
-    
-    }
-    
-    .corpsActivites > *{
-        flex:1 1 23%;
+        width: 95%;
     }
     
     .cardActivites{
-        display: flex;
-        flex-direction : column;
-        justify-content : space-between;
-        align-items : space-between;
-        min-width:200px;
-        height: auto;
-        margin : 1%;
-        box-sizing: border-box;
+        width:100%;
+        margin : 0;
     }
     
     .cardMax{
-        display: flex;
-        justify-content: space-between;
-        align-content: space-between;
-        flex-direction: column;
-        width: 100%;
-        height: 450px;
-        border-radius: 12px;
-        background-color: white;
-        box-shadow: 5px 5px 5px 5px #E7E7E7;
-        margin:0;
+        height: 190px;
+        margin:2%;
     }
     
     .cardReduce{
-        display: flex;
-        flex:1;
-        justify-content: space-between;
-        align-content: space-between;
-        flex-direction: column;
-        width:100%;
-        height: 220px;
-        border-radius: 12px;
-        background-color: white;
-        box-shadow: 5px 5px 5px 5px #E7E7E7;
-        margin:0;
-    }
-    
-    .imageCardActivites{
-        width: 100%;
-        height: 80%;
-        object-fit: cover;
-        border-radius: 12px 12px 0px 0px;
+        height: 190px;
+        margin:2%;
     }
     
     figcaption{
-        background-color: white;
-        font-size: 0.75em;
-        font-weight: bold;
-        margin: 1em;
-      
+        font-size: 0.8125em;
     }
     
     .cardMax .imageCardActivites{
-        height: 90%;
+        height: 80%;
     }
     
-    footer{
-        background-color: #F2F2F2;
-        display: flex;
-        width: 100%;
-        max-width: 1440px;
-        margin-top: 1em;
-        margin-right: auto;
-        margin-left: auto;
-        flex-wrap: wrap;
-        justify-content: center;
+    footer{border: 1px dashed red;
+        padding-top: 20px;
     }
-    
     footer div{
-            min-width: 300px;
-            margin-left: 50px;
-            padding-right: auto;
-            margin-top: 1em;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            flex:1 1 27%;
+        max-width: 350px;
+        margin-left: 0;
     }
     
-    footer ul{
-        font-size: 0.75em;
-        list-style-type:none;
-        text-indent:-3.3em ;
-        margin-top: 1em;
-    }
-    footer ul li{
-        margin-top:0.5em;
+    footer ul{border: 1px dashed blue;
+        font-size: 1em;
+        text-indent:-2.3em ;
     }
     
 }
