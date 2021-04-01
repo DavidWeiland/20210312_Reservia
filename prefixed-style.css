@@ -1,13 +1,13 @@
 /*Général*/
 @font-face {
     font-family: 'raleway';
-    src:    url('../Fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+    src:    url('./fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'raleway-regular';
-    src:    url('../Fonts/Raleway/static/Raleway-Regular.ttf') format('truetype');
+    src:    url('./fonts/Raleway/static/Raleway-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
