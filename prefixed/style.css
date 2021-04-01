@@ -892,7 +892,7 @@ footer ul li{
 }
 
 /*Format IP8*/
-@media screen and (max-device-width: 425spx)
+@media screen and (max-device-width: 425px)
 {
     body {
         font-size : 32px;
@@ -1171,7 +1171,7 @@ footer ul li{
     
 }
 /*Format IP8*/
-@media screen and (min-device-width: 425px) and (max-device-width: 768px)
+@media screen and (min-device-width: 426px) and (max-device-width: 768px)
 {
     body {
         font-size : 24px;
