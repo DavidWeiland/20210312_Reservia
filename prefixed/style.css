@@ -7,7 +7,7 @@
 }
 @font-face {
     font-family: 'raleway-regular';
-    src:    url('../Fonts/Raleway/static/Raleway-Regular.ttf') format('truetype');
+    src:    url('../Fonts/Raleway-static/static/Raleway-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -864,7 +864,6 @@ footer > * {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 27%;
             flex: 1 1 27%;
-    width: ;
     margin : 1%;
 }
 footer div{
