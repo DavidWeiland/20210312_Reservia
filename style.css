@@ -10,6 +10,7 @@ body {
     font-family: raleway, arial, sans-serif;
     font-size:16px;
     max-width: 1440px;
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,7 +52,7 @@ p {
 
 /*Entête*/
 header {
-    width: 93%;
+    width: 100%;
     height: 7.813em;
     margin-left: auto;
     box-sizing: border-box;
@@ -111,7 +112,7 @@ nav a:hover{
 
 /*Zone Recherche*/
 .recherche{
-    width: 93%;
+    width: 100%;
     box-sizing: border-box;
     margin-left: auto;
     padding-right: auto;
@@ -185,7 +186,6 @@ nav a:hover{
 #secretScreenSmall{
     display: none;
 }
-
 
 /*Zone Filtres*/
 .filtres {
@@ -281,7 +281,7 @@ nav a:hover{
 /*Section resultat*/
 .resultat{
     display: flex;
-    width: 93%;
+    width: 100%;
     box-sizing: border-box;
     
     margin-left:auto;
@@ -293,6 +293,7 @@ nav a:hover{
 
 .hebergements{
     width:69%;
+    min-height: 530px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -392,7 +393,7 @@ aside {
     border-radius: 1.063em;
     padding:2%;
     padding-top: 1.875em;
-    height: 100%;
+    min-height: 100%;
 }
 
 .entetePopulaire{
@@ -413,6 +414,8 @@ aside {
     align-content: space-between;
     box-sizing: border-box;
     width:100%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .corpsPopulaire > *{
@@ -447,7 +450,7 @@ aside {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 93%;
+    width: 100%;
     box-sizing: border-box;
     margin: 0;
     margin-left:auto;
@@ -536,20 +539,22 @@ footer{
     background-color: #F2F2F2;
     display: flex;
     width: 100%;
-    max-width: 1440px;
     margin-top: 1%;
-    margin-bottom: 1%;
-    margin-right: auto;
+    padding-bottom: 1%;
     margin-left: auto;
     padding-right:auto;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
-
-
+footer > * {
+    background-color:#f2F2F2;
+    flex: 1 1 27%;
+    width: ;
+    margin : 1%;
+}
 footer div{
         min-width: 350px;
-        margin-left: auto;
+        
         padding-left:0.75em;
         margin-top: 2em;
         display: flex;
@@ -569,17 +574,15 @@ footer ul li{
 }
 
 /*Format IP8*/
-@media screen and (max-device-width: 750px)
+@media screen and (max-device-width: 425spx)
 {
     body {
         font-size : 32px;
-        width: 102%;
-        padding-right:-1em;
+        padding:0;
     }
 
     /*Entête*/
     header {
-        margin:0;
         width: 100%;
         padding-right: 0;
         display: flex;
@@ -754,22 +757,17 @@ footer ul li{
     }
     
     .corpsActivites > * {
-        flex: 100%;
-    }
-    
-    .cardActivites{
-        width:100%;
-        margin : 0;
+        flex: 93%;
     }
     
     .cardMax{
         height: 380px;
-        margin:2%;
+        margin-top:2%;
     }
     
     .cardReduce{
         height: 380px;
-        margin:2%;
+        margin-top:2%;
     }
     
     .cardMax .imageCardActivites{
@@ -783,6 +781,93 @@ footer ul li{
 
     footer ul{
         text-indent:-1.6em ;
+    }
+    
+}
+/*Format IP8*/
+@media screen and (min-device-width: 425px) and (max-device-width: 768px)
+{
+    body {
+        font-size : 24px;
+        padding:0;
+    }
+    /*Zone Recherche*/
+    .secretScreenLarge{
+        display: none;
+    }
+    #secretScreenSmall{
+        display:flex;
+    }
+    /*Section resultat*/
+    .resultat{
+        width: 100%;
+        margin:0;
+        padding-left: 0;
+        padding-right: 0;
+        flex-direction: column-reverse;
+        justify-content:flex-start;
+    }
+
+    aside {
+        width:95%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        background-color: #F2F2F2;
+        border-radius: 0;
+        margin: auto;
+        padding:auto;
+        padding-top: 30px;
+        height: 100%;
+    }
+    .corpsPopulaire > *{
+        flex:100%;
+    }
+    
+    .hebergements{
+        width:95%;
+        background-color:#FFF;
+        border-radius: 0;
+        padding:2%;
+        margin: 0;
+    }
+    
+    .imageCardHebergements{
+        height: 70%;
+    }
+    
+    /*Section Activités*/
+    .resultatActivites{
+        margin: 0;
+        padding:1%;
+    }
+    
+    .corpsActivites > * {
+        flex: 45%;
+    }
+    
+    .cardMax{
+        height: 400px;
+        margin-top:2%;
+    }
+    
+    .cardReduce{
+        height: 190px;
+        margin-top:2%;
+    }
+    
+    .cardReduce .imageCardActivites{
+        height: 70%;
+    }
+    
+    footer > *{
+        flex: 1 1 45%;
+        width:100%;
+    }
+
+    footer ul{
+        text-indent:-2.3em ;
     }
     
 }
