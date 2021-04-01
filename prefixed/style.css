@@ -539,7 +539,7 @@ nav a:hover{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 100%;
-    height: 65%;
+    min-height: 70%;
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 0.75em 0.75em 0em 0em;
@@ -1128,10 +1128,6 @@ footer ul li{
                 flex:100%;
     }
     
-    .imageCardHebergements{
-        height: 70%;
-    }
-    
     /*Section Activités*/
     .resultatActivites{
         margin: 0;
@@ -1235,10 +1231,6 @@ footer ul li{
         border-radius: 0;
         padding:2%;
         margin: 0;
-    }
-    
-    .imageCardHebergements{
-        height: 70%;
     }
     
     /*Section Activités*/
