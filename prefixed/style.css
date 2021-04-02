@@ -32,6 +32,7 @@ body {
 }
 
 a{
+    cursor: pointer;
     text-decoration: none;
     color:black;
 }
@@ -151,6 +152,7 @@ nav a {
 }
 
 nav a:hover{
+    cursor:pointer;
     color:#0065FC;
     border-top:3px #0065FC solid;
 
@@ -272,6 +274,7 @@ nav a:hover{
     font-weight: bold;
     height:100%;
     margin-left: initial;
+    cursor:pointer;
 }
 
 .iconButton:active{
@@ -340,6 +343,7 @@ nav a:hover{
     border-radius : 2.063em 2.063em;
     margin-left: 2%;
     padding-right:0.625em;
+    cursor:pointer;
 }
 .iconFiltreContainer{
     width: 2.5em;
