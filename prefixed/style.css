@@ -16,7 +16,7 @@ body {
     font-family: 'raleway', 'raleway-regular', arial, sans-serif;
     font-size:16px;
     max-width: 1440px;
-    width: 95%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -32,7 +32,6 @@ body {
 }
 
 a{
-    cursor: pointer;
     text-decoration: none;
     color:black;
 }
@@ -152,7 +151,6 @@ nav a {
 }
 
 nav a:hover{
-    cursor:pointer;
     color:#0065FC;
     border-top:3px #0065FC solid;
 
@@ -847,6 +845,7 @@ figcaption{
     height: 90%;
 }
 
+/*footer*/
 footer{
     background-color: #F2F2F2;
     display: -webkit-box;
@@ -864,15 +863,13 @@ footer{
             justify-content: space-between;
 }
 footer > * {
-    background-color:#f2F2F2;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 27%;
             flex: 1 1 27%;
     margin : 1%;
 }
 footer div{
-        min-width: 350px;
-        
+        min-width: 170px;
         padding-left:0.75em;
         margin-top: 2em;
         display: -webkit-box;
@@ -906,6 +903,7 @@ footer ul li{
     body {
         font-size : 32px;
         padding:0;
+        margin:0;
     }
 
     /*Entête*/
@@ -1170,12 +1168,16 @@ footer ul li{
         width:100%;
     }
 
+    footer div{
+        min-width: 100%;
+    }
+
     footer ul{
         text-indent:-1.6em ;
     }
     
 }
-/*Format IP8*/
+/*Format tablet*/
 @media screen and (min-device-width: 426px) and (max-device-width: 768px)
 {
     body {
@@ -1273,6 +1275,10 @@ footer ul li{
             -ms-flex: 1 1 45%;
                 flex: 1 1 45%;
         width:100%;
+    }
+
+    footer div{
+        min-width: 100%;
     }
 
     footer ul{
