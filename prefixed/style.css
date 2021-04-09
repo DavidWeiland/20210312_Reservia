@@ -896,8 +896,7 @@ footer ul li{
 {
     body {
         font-size : 32px;
-       
-        width: 104.5%;
+        width: 100%;
     }
 
     /*Entête*/
@@ -932,7 +931,7 @@ footer ul li{
     }
 
     nav ul{
-        width:105%;
+        width:100%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
