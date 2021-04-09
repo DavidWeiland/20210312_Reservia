@@ -15,7 +15,7 @@
   ],
   "author": "David Weiland",
   "license": "ISC",
-  "browserslist": "last 4 versions",
+  "browserslist": "last 5 versions",
   "bugs": {
     "url": "https://github.com/DavidWeiland/DavidWeiland_2_12032021/issues"
   },

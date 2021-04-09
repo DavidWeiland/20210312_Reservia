@@ -1,27 +1,25 @@
 /*Général*/
 @font-face {
     font-family: 'raleway';
-    src:    url('Fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+    src:    url('../Fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'raleway-regular';
-    src:    url('Fonts/Raleway-static/static/Raleway-Regular.ttf') format('truetype');
+    src:    url('../Fonts/Raleway-static/static/Raleway-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-
 
 body {
     font-family: 'raleway', 'raleway-regular', arial, sans-serif;
     font-size:16px;
-    max-width: 1440px;
-    width: 95%;
+    max-width: 1300px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
@@ -62,9 +60,7 @@ p {
 header {
     width: 100%;
     height: 7.813em;
-    margin-left: auto;
     box-sizing: border-box;
-    padding-right: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -72,6 +68,7 @@ header {
 }
 
 .logo {
+    margin-left: 2%;
     width: 6.25em;
     height: 2.25em;
 }
@@ -123,6 +120,7 @@ nav a:hover{
     width: 100%;
     box-sizing: border-box;
     margin-left: auto;
+    padding-left: 2em;
     padding-right: auto;
     display: flex;
     flex-direction: column;
@@ -164,6 +162,30 @@ nav a:hover{
     padding-left: 1.25em;
 }
 
+::-webkit-input-placeholder{
+    color:black;
+    font-size: 0.81em;
+    font-weight: bold;
+}
+
+::-moz-placeholder{
+    color:black;
+    font-size: 0.81em;
+    font-weight: bold;
+}
+
+:-ms-input-placeholder{
+    color:black;
+    font-size: 0.81em;
+    font-weight: bold;
+}
+
+::-ms-input-placeholder{
+    color:black;
+    font-size: 0.81em;
+    font-weight: bold;
+}
+
 ::placeholder{
     color:black;
     font-size: 0.81em;
@@ -184,6 +206,7 @@ nav a:hover{
     font-weight: bold;
     height:100%;
     margin-left: initial;
+    cursor:pointer;
 }
 
 .iconButton:active{
@@ -227,6 +250,7 @@ nav a:hover{
     border-radius : 2.063em 2.063em;
     margin-left: 2%;
     padding-right:0.625em;
+    cursor:pointer;
 }
 .iconFiltreContainer{
     width: 2.5em;
@@ -291,7 +315,6 @@ nav a:hover{
     display: flex;
     width: 100%;
     box-sizing: border-box;
-    
     margin-left:auto;
     padding-right:auto;
     flex-direction: row;
@@ -343,22 +366,23 @@ nav a:hover{
 .cardHebergements{
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    flex-direction: column;
     min-width: 245px;
     height: 12.438em;
     padding:2%;
     border-radius: 0.75em;
     background-color: white;
-    box-shadow: 10px 10px 40px 2px #D9D9D9;
+    -webkit-box-shadow: 10px 10px 40px 2px #D9D9D9;
+            box-shadow: 10px 10px 40px 2px #D9D9D9;
     margin: 2%;
 }
 
 .imageCardHebergements{
     box-sizing: border-box;
     width: 100%;
-    height: 65%;
+    min-height: 70%;
     object-fit: cover;
     border-radius: 0.75em 0.75em 0em 0em;
 }
@@ -433,9 +457,9 @@ aside {
 
 .cardPopulaire{
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    flex-direction: row;
     box-sizing: border-box;
     width: 96%;
     height: 9em;
@@ -458,11 +482,9 @@ aside {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
+    min-width: 100%;
     box-sizing: border-box;
-    margin: 0;
-    margin-left:auto;
-    padding-right:auto;
+    margin:auto;
     justify-content:space-between;
     align-items: flex-start;
 }
@@ -479,7 +501,6 @@ aside {
     justify-content: space-between;
     align-content: space-between;
     width: 100%;
-
 }
 
 .corpsActivites > *{
@@ -493,35 +514,34 @@ aside {
     align-items : space-between;
     min-width:200px;
     height: auto;
-    margin : 1%;
     box-sizing: border-box;
 }
 
 .cardMax{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-content: space-between;
-    flex-direction: column;
-    width: 100%;
+    width: 95%;
     height: 450px;
     border-radius: 0.75em;
     background-color: white;
     box-shadow: 5px 5px 40px 5px #D9D9D9;
-    margin:0;
+    margin:2%;
 }
 
 .cardReduce{
     display: flex;
     flex:1;
+    flex-direction: column;
     justify-content: space-between;
     align-content: space-between;
-    flex-direction: column;
-    width:100%;
+    width:95%;
     height: 220px;
     border-radius: 0.75em;
     background-color: white;
     box-shadow: 5px 5px 40px 5px #D9D9D9;
-    margin:0;
+    margin:2%;
 }
 
 .imageCardActivites{
@@ -543,31 +563,29 @@ figcaption{
     height: 90%;
 }
 
+/*footer*/
 footer{
     background-color: #F2F2F2;
     display: flex;
     width: 100%;
+    margin: auto;
     margin-top: 1%;
-    padding-bottom: 1%;
-    margin-left: auto;
-    padding-right:auto;
+    padding: 0;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 footer > * {
-    background-color:#f2F2F2;
     flex: 1 1 27%;
     margin : 1%;
 }
 footer div{
-        min-width: 350px;
-        
-        padding-left:0.75em;
-        margin-top: 2em;
-        display: flex;
-        flex-direction: column;
-        justify-content:flex-start ;
-        align-items: flex-start;
+    min-width: 170px;
+    padding-left:0.75em;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start ;
+    align-items: flex-start;
 }
 
 footer ul{
@@ -581,20 +599,17 @@ footer ul li{
 }
 
 /*Format IP8*/
-@media screen and (max-device-width: 425spx)
+@media screen and (max-device-width: 425px)
 {
     body {
         font-size : 32px;
-        padding:0;
+        width: 100%;
     }
 
     /*Entête*/
     header {
         width: 100%;
-        padding-right: 0;
-        display: flex;
-        flex-wrap: wrap;
-        padding-left: 1.25em;
+        flex-wrap: wrap; 
     }
     
     .navigation{
@@ -615,7 +630,7 @@ footer ul li{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-left:-0.938em;
+        margin-left:0;
         margin-right: 0;
         padding-left:0;
         padding-right:0;
@@ -651,20 +666,22 @@ footer ul li{
     /*Zone Recherche*/
     .recherche{
         width: 100%;
-        margin:0;
-        padding-left: 1.25em;
-        padding-right: 0;
+        padding-left: 1em;
         align-items: stretch;
     }
     
     .formulaireRecherche{
         align-items:center;
         justify-content: center;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
+        margin-left: -1.25em;
+        margin-right: 0;
     }
-    
+
+    .zoneTextFormulaire{
+        width: 70%;
+    }
+
     .iconButton {
         border-radius: 13px 13px 13px 13px;
     }
@@ -690,7 +707,8 @@ footer ul li{
     }
     
     .filter{
-        margin : 1%;
+        margin : 3%;
+        padding-right:5%;
     }
 
     .filter p{
@@ -718,23 +736,18 @@ footer ul li{
     /*Section resultat*/
     .resultat{
         width: 100%;
-        margin:0;
-        padding-left: 0;
-        padding-right: 0;
         flex-direction: column-reverse;
         justify-content:flex-start;
     }
 
     aside {
-        width:95%;
+        width:96%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        flex-direction: column;
         background-color: #F2F2F2;
         border-radius: 0;
-        margin: auto;
-        padding:auto;
         padding-top: 30px;
         height: 100%;
     }
@@ -743,28 +756,28 @@ footer ul li{
     }
     
     .hebergements{
-        width:95%;
+        width:96%;
         background-color:#FFF;
         border-radius: 0;
         padding:2%;
-        margin: 0;
+
     }
     .corps > *{
         flex:100%;
     }
     
-    .imageCardHebergements{
-        height: 70%;
-    }
-    
     /*Section Activités*/
-    .resultatActivites{
-        margin: 0;
-        padding:1%;
-    }
+    .corpsActivites{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap; 
+        justify-content: space-between;
+        align-content: space-between;
+        width: 100%;
     
+    }
     .corpsActivites > * {
-        flex: 93%;
+        flex: 100%;
     }
     
     .cardMax{
@@ -781,9 +794,16 @@ footer ul li{
         height: 80%;
     }
     
+    footer{
+        width: 100%;
+    }
     footer > *{
         flex: 1 1 50%;
         width:100%;
+    }
+
+    footer div{
+        max-width: 100%;
     }
 
     footer ul{
@@ -791,14 +811,44 @@ footer ul li{
     }
     
 }
-/*Format IP8*/
-@media screen and (min-device-width: 425px) and (max-device-width: 768px)
+/*Format tablet*/
+@media screen and (min-device-width: 426px) and (max-device-width: 768px)
 {
     body {
         font-size : 24px;
         padding:0;
     }
+
+    header {
+        width: 100%;
+        padding-right: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 1.25em;
+    }
+    
     /*Zone Recherche*/
+    .recherche{
+        width: 100%;
+        margin:0;
+        padding-left: 1.25em;
+        padding-right: 0;
+        align-items: stretch;
+    }
+    
+    .formulaireRecherche{
+        align-items:center;
+        justify-content: center;
+        width: 100%;
+        margin-left:-1.25em;
+        margin-right: auto;
+    }
+
+    .zoneTextFormulaire{
+        width: 70%;
+    }
     .secretScreenLarge{
         display: none;
     }
@@ -817,6 +867,8 @@ footer ul li{
 
     aside {
         width:95%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -838,10 +890,6 @@ footer ul li{
         border-radius: 0;
         padding:2%;
         margin: 0;
-    }
-    
-    .imageCardHebergements{
-        height: 70%;
     }
     
     /*Section Activités*/
@@ -873,8 +921,11 @@ footer ul li{
         width:100%;
     }
 
+    footer div{
+        min-width: 100%;
+    }
+
     footer ul{
         text-indent:-2.3em ;
     }
-    
 }
