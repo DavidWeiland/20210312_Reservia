@@ -902,6 +902,7 @@ footer ul li{
 {
     body {
         font-size : 32px;
+        width: 100%;
         padding:0;
         margin:0;
     }
@@ -1014,11 +1015,15 @@ footer ul li{
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
+        margin-left: -1.25em;
+        margin-right: 0;
     }
-    
+
+    .zoneTextFormulaire{
+        width: 70%;
+    }
+
     .iconButton {
         border-radius: 13px 13px 13px 13px;
     }
@@ -1052,7 +1057,8 @@ footer ul li{
     }
     
     .filter{
-        margin : 1%;
+        margin : 2%;
+        padding-right:4%;
     }
 
     .filter p{
@@ -1184,7 +1190,44 @@ footer ul li{
         font-size : 24px;
         padding:0;
     }
+
+    header {
+        width: 100%;
+        padding-right: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        padding-left: 1.25em;
+    }
+    
     /*Zone Recherche*/
+    .recherche{
+        width: 100%;
+        margin:0;
+        padding-left: 1.25em;
+        padding-right: 0;
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch;
+    }
+    
+    .formulaireRecherche{
+        -webkit-box-align:center;
+            -ms-flex-align:center;
+                align-items:center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 100%;
+        margin-left:-1.25em;
+        margin-right: auto;
+    }
+
+    .zoneTextFormulaire{
+        width: 70%;
+    }
     .secretScreenLarge{
         display: none;
     }
