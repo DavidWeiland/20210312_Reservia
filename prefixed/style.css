@@ -781,7 +781,7 @@ aside {
             justify-content : space-between;
     -webkit-box-align : space-between;
         -ms-flex-align : space-between;
-            align-items : space-between;
+            align-content : space-between;
     min-width:200px;
     height: auto;
     -webkit-box-sizing: border-box;
