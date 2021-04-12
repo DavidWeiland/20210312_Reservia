@@ -162,7 +162,6 @@ nav a:hover{
             box-sizing: border-box;
     margin-left: auto;
     padding-left: 2em;
-    padding-right: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -433,7 +432,6 @@ nav a:hover{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin-left:auto;
-    padding-right:auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -764,9 +762,8 @@ aside {
     -webkit-box-pack : justify;
         -ms-flex-pack : justify;
             justify-content : space-between;
-    -webkit-box-align : space-between;
-        -ms-flex-align : space-between;
-            align-items : space-between;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
     min-width:200px;
     height: auto;
     -webkit-box-sizing: border-box;
@@ -1265,7 +1262,6 @@ footer ul li{
         background-color: #F2F2F2;
         border-radius: 0;
         margin: auto;
-        padding:auto;
         padding-top: 30px;
         height: 100%;
     }
